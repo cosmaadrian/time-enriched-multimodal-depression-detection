@@ -14,17 +14,18 @@ that our model, using EmoBERTa and CLIP embeddings, surpasses other
 methods on two multimodal datasets, obtaining state-of-the-art results
 of 0.931 F1 score on a popular multimodal Twitter dataset, surpassing
 previous methods by 2.3%, and 0.900 F1 score on the only multimodal
-dataset with Reddit data. Our model is flexible and can easily incorpo-
-rate temporal information by manipulating the transformer’s positional
-encodings. Consequently, our model can operate both on randomly sam-
-pled and unordered sets of posts to be more robust to dataset noise
+dataset with Reddit data. Our model is flexible and can easily incorporate temporal information by manipulating the transformer’s positional
+encodings. Consequently, our model can operate both on randomly sampled and unordered sets of posts to be more robust to dataset noise
 and on ordered collections of posts, accommodating the relative posting
 intervals without any major architectural modifications.*
 
 #### Data
 
+The Reddit and Twitter multimodal data used in our experiments are from the work of:
 
+Uban, Ana-Sabina, Berta Chulvi, and Paolo Rosso. [Explainability of Depression Detection on Social Media: From Deep Learning Models to Psychological Interpretations and Multimodality](https://link.springer.com/chapter/10.1007/978-3-031-04431-1_13). In Early Detection of Mental Health Disorders by Social Media Monitoring, pp. 289-320. Springer, Cham, 2022.
 
+Gui, Tao, Liang Zhu, Qi Zhang, Minlong Peng, Xu Zhou, Keyu Ding, and Zhigang Chen. [Cooperative Multimodal Approach to Depression Detection in Twitter](https://ojs.aaai.org/index.php/AAAI/article/view/3775). In Proceedings of the AAAI conference on Artificial Intelligence, vol. 33, no. 01, pp. 110-117. 2019.
 
 #### Running experiments
 
