@@ -1,0 +1,4 @@
+$extends$: configs/base_config.yaml
+
+image_embeddings_type: clip
+text_embeddings_type: emoberta

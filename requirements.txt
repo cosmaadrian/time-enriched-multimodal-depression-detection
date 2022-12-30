@@ -1,0 +1,15 @@
+clip==1.0
+coral_pytorch==1.2.0
+numpy==1.20.3
+opencv_python==4.5.4.58
+pandas==1.2.0
+Pillow==9.1.0
+PyYAML==6.0
+scikit_learn==1.0.2
+sentence_transformers==2.1.0
+torch==1.11.0
+torch_intermediate_layer_getter==0.1.post1
+torchvision==0.2.2
+tqdm==4.62.2
+transformers==4.16.2
+vit_pytorch==0.26.7

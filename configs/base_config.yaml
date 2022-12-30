@@ -1,0 +1,51 @@
+#####################################################
+#####################################################
+TEXT_EMBEDDING_SIZES:
+  emoberta: 768
+  roberta: 768
+  minilm: 384
+
+IMAGE_EMBEDDING_SIZES:
+  clip: 768
+  dino: 768
+####################################################
+#####################################################
+
+dataset: twitter
+num_folds: 5
+fold: 0
+
+# can be image, text, both
+modality: both
+
+use_class_weights: True
+
+model: multimodal-transformer
+
+# can be tim2vec, learned or zero
+position_embeddings: time2vec
+
+# can be relative or delta
+timestamp_kind: 'relative'
+
+image_embeddings_type: clip
+text_embeddings_type: roberta
+
+# can be sin or cos
+time2vec_activation: sin
+
+window_size: 128 # 128
+
+base_lr: 0.00001
+
+cross_encoder_args:
+  embedding_size: 128
+  n_heads: 8
+  n_layers: 4
+  dropout_prob: 0.1
+
+final_encoder_args:
+  embedding_size: 128
+  n_heads: 4
+  n_layers: 2
+  dropout_prob: 0.1

@@ -1,0 +1,39 @@
+#####################################################
+#####################################################
+TEXT_EMBEDDING_SIZES:
+  emoberta: 768
+  roberta: 768
+  minilm: 384
+
+IMAGE_EMBEDDING_SIZES:
+  clip: 768
+  dino: 768
+####################################################
+#####################################################
+
+dataset: twitter
+num_folds: 5
+fold: 0
+
+# can be image, text, both
+modality: text
+
+use_class_weights: True
+
+model: tlstm
+
+# can be relative or delta
+timestamp_kind: 'delta'
+
+# can be tim2vec, learned or zero
+
+image_embeddings_type: clip
+text_embeddings_type: roberta
+
+window_size: 128 # 128
+
+base_lr: 0.00001
+
+model_args:
+  hidden_size: 256
+  embedding_size: 256
