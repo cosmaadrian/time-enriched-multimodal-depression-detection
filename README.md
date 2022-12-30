@@ -1,7 +1,7 @@
 ## It’s Just a Matter of Time: Detecting Depression with Time-Enriched Multimodal Transformers
 ### Ana-Maria Bucur, Adrian Cosma, Paolo Rosso and Liviu P. Dinu
 
-This repository contains the official source code for the paper **"It’s Just a Matter of Time: Detecting Depression with Time-Enriched Multimodal Transformers"***, accepted at the 2023 edition of European Conference on Information Retrieval (ECIR).
+This repository contains the official source code for the paper **"It’s Just a Matter of Time: Detecting Depression with Time-Enriched Multimodal Transformers"**, accepted at the 2023 edition of European Conference on Information Retrieval (ECIR).
 
 #### Abstract
 *Depression detection from user-generated content on the internet has
