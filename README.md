@@ -41,10 +41,10 @@ This repo is based on [acumen-template](https://github.com/cosmaadrian/acumen-te
 If you find our work useful, please cite us:
 
 ```
-@article{matter-of-time-2023,
+@inproceedings{matter-of-time-2023,
   author  = "Bucur, Ana-Maria and Cosma, Adrian and Rosso, Paolo and P. Dinu, Liviu",
   title   = "It’s Just a Matter of Time: Detecting Depression with Time-Enriched Multimodal Transformers",
-  journal = "European Conference on Information Retrieval (ECIR)",
+  booktitle = "European Conference on Information Retrieval (ECIR)",
   year    = 2023,
 }
 ```
