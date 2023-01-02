@@ -4,20 +4,7 @@
 This repository contains the official source code for the paper **"It’s Just a Matter of Time: Detecting Depression with Time-Enriched Multimodal Transformers"**, accepted at the 2023 edition of European Conference on Information Retrieval (ECIR).
 
 #### Abstract
-*Depression detection from user-generated content on the internet has
-been a long-lasting topic of interest in the research community. Current
-methods for depression detection from social media are mainly focused
-on text, and only a few also utilize images posted by users. In this work,
-we propose a flexible multimodal transformer architecture for classifying
-depression from social media posts containing text and images. We show
-that our model, using EmoBERTa and CLIP embeddings, surpasses other
-methods on two multimodal datasets, obtaining state-of-the-art results
-of 0.931 F1 score on a popular multimodal Twitter dataset, surpassing
-previous methods by 2.3%, and 0.900 F1 score on the only multimodal
-dataset with Reddit data. Our model is flexible and can easily incorporate temporal information by manipulating the transformer’s positional
-encodings. Consequently, our model can operate both on randomly sampled and unordered sets of posts to be more robust to dataset noise
-and on ordered collections of posts, accommodating the relative posting
-intervals without any major architectural modifications.*
+*Depression detection from user-generated content on the internet has been a long-lasting topic of interest in the research community, providing valuable screening tools for psychologists. The ubiquitous use of social media platforms lays out the perfect avenue for exploring mental health manifestations in posts and interactions with other users. Current methods for depression detection from social media mainly focus on text processing, and only a few also utilize images posted by users. In this work, we propose a flexible time-enriched multimodal transformer architecture for detecting depression from social media posts, using pretrained models for extracting image and text embeddings. Our model operates directly at the user-level, and we enrich it with the relative time between posts by using time2vec positional embeddings. Moreover, we propose another model variant, which can operate on randomly sampled and unordered sets of posts to be more robust to dataset noise. We show that our method, using EmoBERTa and CLIP embeddings, surpasses other methods on two multimodal datasets, obtaining state-of-the-art results of 0.931 F1 score on a popular multimodal Twitter dataset, and 0.900 F1 score on the only multimodal Reddit dataset.*
 
 #### Data
 
