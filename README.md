@@ -50,5 +50,6 @@ If you find our work useful, please cite us:
   title   = "It’s Just a Matter of Time: Detecting Depression with Time-Enriched Multimodal Transformers",
   booktitle = "European Conference on Information Retrieval (ECIR)",
   year    = 2023,
+  doi = "10.1007/978-3-031-28244-7_13"
 }
 ```
