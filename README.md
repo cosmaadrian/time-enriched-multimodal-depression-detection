@@ -41,7 +41,7 @@ Comparision between different types of text and images encoders.
 ![](images/table4.png)
 
 
-#### Citation
+### Citation
 If you find our work useful, please cite us:
 
 ```
