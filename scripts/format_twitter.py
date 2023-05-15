@@ -11,8 +11,6 @@ negative_users = sorted(glob.glob(f"{DATA_PATH}/negative/*"))
 user_dates = {}
 
 for user_path in tqdm.tqdm(positive_users + negative_users):
-    if user_path.endswith("IAMABBIE"):
-        continue
 
     df = pd.read_json(f"{user_path}/timeline.txt", lines=True)
     user_dates[user_path.split("/")[-1]] = [
