@@ -20,6 +20,8 @@ Gui, Tao, Liang Zhu, Qi Zhang, Minlong Peng, Xu Zhou, Keyu Ding, and Zhigang Che
 
 Please contact the respective authors for accessing the data.
 
+After getting the data, two json files with the dates of the posts need to be created. For generating the files, the scripts format-reddit-2.py and format-twitter.py should be used.
+
 ### Running experiments
 
 Our model definition can be found in the `models/` folder. The multimodal transformer model is based on [LXMERT](https://github.com/airsplay/lxmert) for the cross-encoder definition. The T-LSTM model is adapted from this [repo](https://github.com/duskybomb/tlstm). Time2Vec positional embeddings are adapted from this [repo](https://github.com/ojus1/Time2Vec-PyTorch).
