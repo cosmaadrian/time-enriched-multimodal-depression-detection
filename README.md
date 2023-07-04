@@ -20,7 +20,7 @@ Gui, Tao, Liang Zhu, Qi Zhang, Minlong Peng, Xu Zhou, Keyu Ding, and Zhigang Che
 
 Please contact the respective authors for accessing the data.
 
-After getting the data, two json files with the dates of the posts need to be created. For generating the files, the scripts format-reddit-2.py and format-twitter.py should be used.
+After getting the data, two json files with the dates of the posts need to be created. For generating the files, the scripts  should be used: `scripts/format-reddit-2.py` and `scripts/format-twitter.py`.
 
 ### Running experiments
 
