@@ -96,9 +96,6 @@ def extract_text_embedding_sent(dataset, model, embs, kind):
     text_encoder = SentenceTransformer(model).cuda()
 
     for i in tqdm.tqdm(range(len(dataset))):
-        # skipping reddit_-itchyyyyscrotum
-        if i == 924:
-            continue
 
         sample = dataset[i]
         user = sample["author"]
