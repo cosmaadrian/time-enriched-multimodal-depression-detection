@@ -28,10 +28,6 @@ class TwitterDataset(TimeDataset):
         positive_users = sorted(glob.glob(f"{DATA_PATH}/positive/*"))
         negative_users = sorted(glob.glob(f"{DATA_PATH}/negative/*"))
 
-        # No timeline
-        if "../../MultiModalDataset/positive/IAMABBIE" in positive_users:
-            positive_users.remove("../../MultiModalDataset/positive/IAMABBIE")
-
         users_per_fold = len(positive_users) // self.args.num_folds
 
         start_idx_fold = self.args.fold * users_per_fold
