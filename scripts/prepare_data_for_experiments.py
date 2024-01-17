@@ -16,10 +16,6 @@ EXPERIMENTS_DATA_PATH = "../data/splits/for_experiments"
 
 files = sorted(glob.glob(DATA_PATH[0]) + glob.glob(DATA_PATH[1]))
 
-# too many posts
-users_with_large_files = ["reddit_-peterboykin", "reddit_-itchyyyyscrotum"]
-
-
 def get_users_labels(path):
     data_df = pd.read_csv(path)
     users = data_df["user"]
@@ -32,9 +28,6 @@ def make_dataset(users, labels, kind="train"):
     for user, label in tqdm.tqdm(zip(users, labels), total=len(users)):
         meta_list = []
         print(user)
-        if user in users_with_large_files:
-            print("Reading a very big file for user")
-            print(user)
 
         data_path = DATA_PATH[int(label)]
 
