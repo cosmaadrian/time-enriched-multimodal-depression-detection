@@ -13,9 +13,6 @@ DATA_PATH = [
 
 files = sorted(glob.glob(DATA_PATH[0]) + glob.glob(DATA_PATH[1]))
 
-# too many posts, do not have any images
-users_to_skip = ["reddit_-peterboykin", "reddit_-itchyyyyscrotum"]
-
 
 def get_users_labels(path):
     df = pd.read_csv(path)
@@ -30,14 +27,10 @@ def make_official_dataset(users, labels, kind="train"):
     num_users = 0
 
     for user, label in tqdm.tqdm(zip(users, labels), total=len(users)):
-        if user in users_to_skip:
-            continue
-
         data_path = DATA_PATH[int(label)]
 
         user_file = f"{data_path}/{user}.jsonl"
-        # if num_users > 10:
-        # 	break
+
         user_posts = pd.read_json(user_file, lines=True)
 
         # keep only users that have images
@@ -93,14 +86,11 @@ def make_dataset_with_posts_and_images(users, labels, kind="train"):
     num_users = 0
 
     for user, label in tqdm.tqdm(zip(users, labels), total=len(users)):
-        if user in users_to_skip:
-            continue
 
         data_path = DATA_PATH[int(label)]
 
         user_file = f"{data_path}/{user}.jsonl"
-        # if num_users > 10:
-        # 	break
+
         user_posts = pd.read_json(user_file, lines=True)
 
         # keep only users that also have images, besides texts
@@ -161,14 +151,11 @@ def make_dataset_with_only_texts(users, labels, kind="train"):
     num_users = 0
 
     for user, label in tqdm.tqdm(zip(users, labels), total=len(users)):
-        if user in users_to_skip:
-            continue
 
         data_path = DATA_PATH[int(label)]
 
         user_file = f"{data_path}/{user}.jsonl"
-        # if num_users > 10:
-        # 	break
+
         user_posts = pd.read_json(user_file, lines=True)
 
         # keep only users that also have images, besides texts
