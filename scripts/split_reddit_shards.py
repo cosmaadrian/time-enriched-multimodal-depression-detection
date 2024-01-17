@@ -66,8 +66,6 @@ users = df["user"].tolist()
 
 for i, user in enumerate(sorted(users)):
     paths_df = {}
-    if "itchyyyyscrotum" in user:
-        continue
 
     user_df = pd.read_csv(
         f"{SPLITS_PATH}/for_experiments/{KIND}/{user}.csv", lineterminator="\n"
